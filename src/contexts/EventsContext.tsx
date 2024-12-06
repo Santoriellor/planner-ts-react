@@ -48,7 +48,7 @@ export const CalendarEventsProvider = ({ children }: CalendarEventsProviderProps
   // Fetch events from db.json using axios
   const fetchCalendarEvents = async () => {
     try {
-      const response = await axios.get<CalendarEvent[]>('http://localhost:3001/events');// test
+      const response = await axios.get<CalendarEvent[]>('http://localhost:3001/events');
       // Assuming the 'date' is returned as an ISO string, convert to Date objects
       const fetchedCalendarEvents = response.data.map((calendarEvent) => ({
         ...calendarEvent,
