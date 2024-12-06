@@ -1,0 +1,11 @@
+.user-icon {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: transform 0.2s ease;
+  }
+  .user-icon:hover {
+    transform: scale(1.1);
+  }

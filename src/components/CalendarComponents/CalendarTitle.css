@@ -1,0 +1,27 @@
+.calendar-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.calendar-title button {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.87);
+    cursor: pointer;
+}
+
+.calendar-title button:hover {
+    color: rgba(173, 169, 169, 0.87);
+}
+
+.calendar-title-notclickable {
+    cursor: default;
+}
+
+.calendar-title-clickable {
+    cursor: pointer;
+}
+.calendar-title-clickable:hover {
+    color: rgba(173, 169, 169, 0.87);
+}

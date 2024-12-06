@@ -1,0 +1,41 @@
+.calendar-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.calendar-header-item button {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.calendar-header-item span {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: default;
+    color: rgba(255, 255, 255, 0.87);
+    text-align: center;
+}
+
+.calendar-header-item {
+    display: flex;
+    flex: 1;
+    padding: 2px;
+}
+
+.calendar-header-item button:hover {
+    color: black;
+}
+
+.calendar-header-empty {
+    width: 40px; /* Fixed width for the hours column */
+    background: none;
+}

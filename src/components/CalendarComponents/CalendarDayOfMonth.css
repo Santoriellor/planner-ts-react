@@ -1,0 +1,97 @@
+.calendar-month-day {
+  background-color: rgb(140, 140, 153);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2px;
+  margin: 1px;
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 90%; /* Adjust based on how much height each hour occupies */
+}
+
+.calendar-month-day:hover {
+  filter: brightness(1.1);
+}
+
+.filler-month-day {
+  background-color: #554b4b; /* Light gray background for filler days */
+  color: #999; /* Dimmed color for text */
+}
+
+.current-month-day {
+  background-color: #c5ccd1;
+  border: 1px solid red;
+}
+
+.current-month-day:hover {
+  filter: brightness(1.1);
+}
+
+.calendar-month-day ul {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none; /* For Firefox */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: x-small;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.calendar-month-day ul::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+.calendar-month-day li {
+  flex-shrink: 0;
+}
+
+.calendar-month-day-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.calendar-month-day-button:hover {
+  background-color: #616263;
+  border: 1px solid #616263;
+  border-radius: 3px;
+}
+
+.calendar-month-event-button {
+  background-color: #89cff0;
+  border: 1px solid #000;
+  border-radius: 3px;
+  margin: 0;
+  padding: 0;
+  padding-left: 2px;
+  list-style-type: none;
+  font-size: xx-small;
+  width: 100%;
+  height: 100%;
+  color: black;
+  text-align: left;
+  cursor: pointer;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.calendar-month-event-button:hover {
+  background-color: #554b4b;
+  color: whitesmoke;
+}
+
+.calendar-month-li-hover-button {
+  flex-grow: 1;
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  border-radius: 3px;
+}
+

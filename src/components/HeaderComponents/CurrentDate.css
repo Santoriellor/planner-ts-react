@@ -1,0 +1,7 @@
+.current-date {
+    cursor: pointer;
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

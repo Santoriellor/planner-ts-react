@@ -1,0 +1,67 @@
+.calendar-day {
+    background-color: rgb(140, 140, 153);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0;
+    margin: 1px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.current-day {
+    background-color: #c5ccd1;
+    border: 1px solid red;
+}
+
+.calendar-event {
+    overflow: visible;
+}
+
+.calendar-event-button {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    background-color: #89cff0;
+    border: 1px solid #000;
+    cursor: pointer;
+    color: #fff;
+    padding: 2px;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    transition: height 0.3s ease, min-height 0.3s ease, width 0.3 ease, background-color 0.3 ease;
+}
+
+.calendar-event-button:hover {
+    background-color: #554b4b;
+    color: whitesmoke;
+    overflow: visible;
+    height: auto;
+    min-height: 100%;
+    z-index: 1000;
+}
+
+.calendar-event-button.week-view:hover {
+    width: auto;
+}
+
+.hour-block {
+    border-bottom: 1px dotted #aaa7a7;
+    height: 36.5px; /* Adjust to fit the hourly time slots */
+    font-size: x-small;
+}
+
+.calendar-day-hours {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: black;
+}

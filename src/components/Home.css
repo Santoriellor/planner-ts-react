@@ -1,0 +1,26 @@
+.home-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    height: 500px;
+}
+
+.upcoming-events {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.upcoming-week {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}

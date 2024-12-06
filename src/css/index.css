@@ -1,0 +1,77 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+body {
+  background-color: #8d8080;
+  color: whitesmoke;
+
+  margin: 0;
+  padding: 0;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: auto;
+  width: 600px;
+  height: 100vh;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+/* ************* start of header ************** */
+header {
+  background-color: #333;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: inherit;
+  height: 35px;
+  position: fixed;
+  top: 0;
+  overflow: visible;
+  z-index: 1000;
+}
+
+.picker-and-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* *************** end of header ************** */
+
+/* ************* start of main ************** */
+
+main {
+  margin-top: 34px;
+  background-color: rgb(102, 102, 114);
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  width: inherit;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+/* ************* end of main ************** */

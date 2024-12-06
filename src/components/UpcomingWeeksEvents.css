@@ -1,0 +1,40 @@
+.nextweek-events {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+.nextweek-events p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.nextweek-events ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.nextweek-events-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 0;
+    background-color: #89cff0;
+    border: 1px solid #000;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 150px;
+    transition: height 0.3s ease, min-height 0.3s ease;
+}
+
+.nextweek-events-button:hover {
+    background-color: #554b4b;
+    color: whitesmoke;
+    overflow: visible;
+    height: auto;
+}

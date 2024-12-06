@@ -1,0 +1,32 @@
+.view-month {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.view-month-grid {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.view-month-week {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  flex-grow: 1;
+}
+
+.view-month-week-number {
+  display: flex;
+  width: 20px;
+  align-items: center;
+  justify-content: center;
+  font-size: x-small;
+  cursor: pointer;
+}
+.view-month-week-number:hover {
+  font-size: 105%;
+}
